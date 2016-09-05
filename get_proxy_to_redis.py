@@ -40,7 +40,8 @@ for i in range(1, 1029):
     print(url)
     all_ip = get_content(url)
     for proxy_ip in all_ip:
-        r0.hsetnx("proxy", proxy_ip.contents[3].string, proxy_ip.contents[5].string)
+        #r0.hsetnx("proxy", proxy_ip.contents[3].string, proxy_ip.contents[5].string)
+        print(proxy_ip.contents[3].string"+"proxy_ip.contents[5].string)
     print("入库成功")
     time.sleep(10)
 
